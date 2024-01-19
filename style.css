@@ -1,0 +1,914 @@
+@font-face {
+  src: url(fonts/Crayond-Bold.ttf);
+  font-family: CrayondBold;
+}
+
+@font-face {
+  src: url(fonts/Crayond-Regular.ttf);
+  font-family: CrayondReg;
+}
+
+@font-face {
+  src: url(fonts/Crayond-Light.ttf);
+  font-family: CrayondLight;
+}
+
+body {
+  background-color: #f4efea;
+  max-width: 100%;
+  margin: 0 auto;
+  cursor: url('assets/cursor.png'), auto;
+}
+
+a {
+  color: #D47FA5;
+}
+
+.wrapper-main {
+  width: 1263px;
+}
+
+#Group_6 {
+  position: relative;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  height: 60%;
+  animation: fill-anim 0.6s ease forwards 3.5s;
+}
+
+#Group_6 path:nth-child(1) {
+  stroke-dasharray: 4562px;
+  stroke-dashoffset: 4562px;
+  animation: line-anim 2s ease forwards;
+}
+
+#Group_6 path:nth-child(2) {
+  stroke-dasharray: 3960px;
+  stroke-dashoffset: 3960px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+
+#Group_6 path:nth-child(3) {
+  stroke-dasharray: 3600px;
+  stroke-dashoffset: 3600px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+
+#Group_6 path:nth-child(4) {
+  stroke-dasharray: 5650px;
+  stroke-dashoffset: 5650px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+
+#Group_6 path:nth-child(5) {
+  stroke-dasharray: 2900px;
+  stroke-dashoffset: 2900px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+
+#Group_6 path:nth-child(6) {
+  stroke-dasharray: 5060px;
+  stroke-dashoffset: 5060px;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+#Group_6 path:nth-child(7) {
+  stroke-dasharray: 3120px;
+  stroke-dashoffset: 3120px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-anim {
+  to {
+    fill: #333945;
+  }
+}
+
+.ondertitel {
+  font-size: 45px;
+  font-family: CrayondBold;
+  color: #333945;
+  text-align: center;
+  position: relative;
+  top: -5px;
+}
+
+.zon {
+  opacity: 0;
+  /* Begin met een onzichtbaar element */
+  position: relative;
+  display: block;
+  align-items: center;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8%;
+  width: 8%;
+  animation: fade-in 1.5s ease-out forwards;
+  /* Animatie toepassen */
+}
+
+@media only screen and (min-width: 768px) {
+  .tekstje1p1 {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+    margin-top: 160px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "Work Sans";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .tekstje1 {
+    display: none;
+  }
+}
+
+.pic1 {
+  position: relative;
+  display: block;
+  align-items: center;
+  top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20%;
+  width: 20%
+}
+
+.titelMenu {
+  font-size: 60px;
+  font-family: CrayondReg;
+  color: #333945;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+.container, .container2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+}
+
+.container {
+  margin-bottom: -280px;
+}
+
+/* Cocktail 1 */
+.aperol {
+  flex: 1;
+  box-sizing: border-box;
+  text-align: left;
+  size: 110%;
+}
+
+.cocktail1 {
+  position: relative;
+  display: block;
+  top: 15px;
+  left: 20px;
+  width: 40%;
+  height="auto";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cocktail1tekst1 {
+  font-size: 40px;
+  font-family: CrayondBold;
+  color: #333945;
+  position: relative;
+  top: -220px;
+  left: 250px;
+}
+
+.cocktail1ondertekst1 {
+  font-size: 18px;
+  font-family: "Work Sans";
+  font-weight: light;
+  color: #333945;
+  position: relative;
+  top: -240px;
+  left: 250px;
+}
+
+/* Cocktail 2 */
+.cosmopolitan {
+  flex: 1;
+  box-sizing: border-box;
+  text-align: left;
+  size: 110%;
+}
+
+.cocktail2 {
+  position: relative;
+  display: block;
+  left: -110px;
+  width: 50%;
+  height="auto";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cocktail2tekst1 {
+  font-size: 40px;
+  font-family: CrayondBold;
+  color: #333945;
+  position: relative;
+  top: -280px;
+  left: 150px;
+  width: 20%;
+}
+
+.cocktail2ondertekst1 {
+  font-size: 18px;
+  font-family: "Work Sans";
+  font-weight: light;
+  color: #333945;
+  position: relative;
+  top: -300px;
+  left: 150px;
+  width: 20%;
+}
+
+/* Cocktail 3 */
+.negroni {
+  flex: 1;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.cocktail3 {
+  position: relative;
+  display: block;
+  left: 15px;
+  width: 45%;
+  height="auto";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cocktail3tekst1 {
+  font-size: 40px;
+  font-family: CrayondBold;
+  color: #333945;
+  position: relative;
+  top: -260px;
+  left: 250px;
+}
+
+.cocktail3ondertekst1 {
+  font-size: 18px;
+  font-family: "Work Sans";
+  color: #333945;
+  position: relative;
+  top: -280px;
+  left: 250px;
+}
+
+/* Cocktail 4 */
+.mimosa {
+  flex: 1;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.cocktail4 {
+  position: relative;
+  display: block;
+  left: -85px;
+  width: 42%;
+  height="auto";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cocktail4tekst1 {
+  font-size: 40px;
+  font-family: CrayondBold;
+  color: #333945;
+  position: relative;
+  top: -240px;
+  left: 150px;
+  width: 20%;
+}
+
+.cocktail4ondertekst1 {
+  font-size: 18px;
+  font-family: "Work Sans";
+  font-weight: light;
+  color: #333945;
+  position: relative;
+  top: -260px;
+  left: 150px;
+  width: 20%;
+}
+
+.titelTekst {
+  font-size: 60px;
+  font-family: CrayondReg;
+  color: #333945;
+  position: relative;
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: -10px;
+}
+
+.titelKlein {
+  font-size: 20px;
+  font-family: "Work Sans";
+  color: #333945;
+  position: relative;
+  text-align: center;
+  top: 20px;
+}
+
+.karakters {
+  font-size: 40px;
+  font-family: CrayondBold;
+  color: #333945;
+  position: relative;
+  text-align: center;
+}
+
+.tekstje2 {
+  column-count: 2;
+  column-gap: 30px;
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  font-family: "Work Sans";
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.probeer {
+  font-size: 50px;
+  font-family: CrayondBold;
+  color: #D47FA5;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+  border-style: solid;
+  border-radius: 50px;
+  margin-left: 330px;
+}
+
+.cLight, .cReg, .cBold {
+  font-size: 50px;
+  color: #333945;
+  text-align: center;
+  position: relative;
+}
+
+.cLight {
+  font-family: "CrayondLight";
+}
+
+.cReg {
+  font-family: "CrayondReg";
+}
+
+.cBold {
+  font-family: "CrayondBold";
+}
+
+.lopend{
+  font-size: 20px;
+  font-family: CrayondBold;
+  color: #333945;
+  position: relative;
+  text-align: center;
+  max-width: 500px;
+  left: 30%;
+  margin-bottom: 50px;
+}
+
+.top3titel {
+  font-size: 30px;
+  font-family: CrayondReg;
+  color: #333945;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.top3list {
+  font-size: 18px;
+  font-family: "Work Sans";
+  color: #333945;
+  position: relative;
+  text-align: left;
+  max-width: 600px;
+  margin-left: 330px;
+  top: 10px;
+  margin-bottom: 50px;
+}
+
+.crayondList {
+  font-family: CrayondReg;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+/* Algemene opmaak voor de flip-container */
+.card-container {
+  perspective: 1000px;
+  /* Creëer een perspectief voor de 3D-draaiing */
+  width: 700px;
+  height: 700px;
+  margin-left: 280px;
+  margin-top: 100px;
+}
+
+/* Het element dat wordt omgedraaid (de container) */
+.image-container {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  /* Behoud de 3D-transformatie */
+  transition: transform 0.5s;
+  /* Voegt een overgang toe voor een vloeiende animatie */
+}
+
+/* De voorkant van de kaart (in dit geval de eerste afbeelding) */
+.front {
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  /* Verberg de achterkant van de kaart */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* De achterkant van de kaart (in dit geval de tweede afbeelding) */
+.back {
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  /* Verberg de achterkant van de kaart */
+  transform: rotateY(180deg);
+  /* Draai de achterkant om */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Voeg een hover-effect toe om de kaart om te draaien wanneer erover wordt gehoverd */
+.card-container:hover .image-container {
+  transform: rotateY(180deg);
+  /* Draai de kaart om bij hover */
+}
+
+.vierkant {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  height: auto;
+}
+
+.credits {
+  font-size: 20px;
+  font-family: "Work Sans";
+  color: #333945;
+  text-align: center;
+  position: relative;
+  top: -200px;
+}
+
+.creditsTitel {
+  font-size: 110%;
+  font-family: CrayondBold;
+}
+
+/* Versie mobiel */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #f4efea;
+    max-width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    overflow-x: hidden;
+  }
+
+  .wrapper-main {
+    width: 80%;
+  }
+
+  #Group_6 {
+    position: relative;
+    top: 30px;
+    left: 65%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 80%;
+    animation: fill-anim 0.6s ease forwards 3.5s;
+  }
+
+  .ondertitel {
+    font-size: 20px;
+    font-family: CrayondBold;
+    left: 15%;
+    top: -10px;
+    color: #333945;
+    position: relative;
+  }
+
+  .zon {
+    opacity: 0;
+    /* Begin met een onzichtbaar element */
+    position: relative;
+    display: block;
+    left: 15%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8%;
+    width: 8%;
+    animation: fade-in 1.5s ease-out forwards;
+    /* Animatie toepassen */
+  }
+
+  .tekstje1 {
+    column-count: 1;
+    text-align: justify;
+    align-items: center;
+    font-family: "Work Sans";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+    margin-left: 30%;
+    font-size: 80%;
+  }
+
+  .tekstje1p1 {
+    display: none;
+  }
+
+  .pic1 {
+    position: relative;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 15%;
+    top: 20px;
+    height: 30%;
+    width: 30%
+  }
+
+  .titelMenu {
+    font-size: 30px;
+    font-family: CrayondReg;
+    color: #333945;
+    position: relative;
+    text-align: center;
+    margin-left: 25%;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+  }
+
+  .container, .container2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+  }
+
+  /* Cocktail 1 */
+  .aperol {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .cocktail1 {
+    position: relative;
+    display: block;
+    top: 40px;
+    left: 30px;
+    width: 150px;
+    height="auto";
+  }
+
+  .cocktail1tekst1 {
+    font-size: 20px;
+    font-family: CrayondBold;
+    color: #333945;
+    position: relative;
+    top: -90px;
+    left: 180px;
+  }
+
+  .cocktail1ondertekst1 {
+    font-size: 12px;
+    font-family: "Work Sans";
+    font-weight: light;
+    color: #333945;
+    position: relative;
+    top: -100px;
+    left: 180px;
+  }
+
+  /* Cocktail 2 */
+  .cosmopolitan {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: left;
+    size: 110%;
+  }
+
+  .cocktail2 {
+    position: relative;
+    display: block;
+    top: 180px;
+    left: -145px;
+    width: 150px;
+    height="auto";
+  }
+
+  .cocktail2tekst1 {
+    font-size: 20px;
+    font-family: CrayondBold;
+    color: #333945;
+    position: relative;
+    top: 40px;
+    left: -5px;
+  }
+
+  .cocktail2ondertekst1 {
+    font-size: 12px;
+    font-family: "Work Sans";
+    font-weight: light;
+    color: #333945;
+    position: relative;
+    top: 30px;
+    left: -5px;
+  }
+
+  /* Cocktail 3 */
+  .negroni {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .cocktail3 {
+    position: relative;
+    display: block;
+    top: 300px;
+    left: 40px;
+    width: 150px;
+    height="auto";
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cocktail3tekst1 {
+    font-size: 20px;
+    font-family: CrayondBold;
+    color: #333945;
+    position: relative;
+    top: 165px;
+    left: 180px;
+  }
+
+  .cocktail3ondertekst1 {
+    font-size: 12px;
+    font-family: "Work Sans";
+    font-weight: light;
+    color: #333945;
+    position: relative;
+    top: 155px;
+    left: 180px;
+  }
+
+  /* Cocktail 4 */
+  .mimosa {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .cocktail4 {
+    position: relative;
+    display: block;
+    top: 440px;
+    left: -140px;
+    width: 150px;
+    height="auto";
+  }
+
+  .cocktail4tekst1 {
+    font-size: 20px;
+    font-family: CrayondBold;
+    color: #333945;
+    position: relative;
+    top: 295px;
+    left: 0px;
+  }
+
+  .cocktail4ondertekst1 {
+    font-size: 12px;
+    font-family: "Work Sans";
+    font-weight: light;
+    color: #333945;
+    position: relative;
+    top: 285px;
+    left: 0px;
+  }
+
+  .titelTekst {
+    font-size: 40px;
+    font-family: CrayondReg;
+    color: #333945;
+    position: relative;
+    text-align: center;
+    top: 485px;
+    margin-left: 25%;
+  }
+
+  .titelKlein {
+    font-size: 20px;
+    font-family: "Work Sans";
+    color: #333945;
+    position: relative;
+    text-align: center;
+    top: 500px;
+    margin-left: 25%;
+  }
+
+  .karakters {
+    font-size: 22px;
+    font-family: CrayondBold;
+    color: #333945;
+    top: 495px;
+    position: relative;
+    text-align: center;
+    margin-left: 25%;
+  }
+
+  .tekstje2 {
+    column-count: 1;
+    text-align: justify;
+    align-items: center;
+    font-family: "Work Sans";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 550px;
+    margin-left: 28%;
+    font-size: 80%;
+    width: 300px;
+  }
+
+  .probeer {
+    font-size: 28px;
+    font-family: CrayondBold;
+    color: #D47FA5;
+    position: relative;
+    text-align: center;
+    border-style: none;
+    margin-left: 25%;
+    max-width: 100%;
+  }
+
+  .cLight, .cReg, .cBold {
+    font-size: 30px;
+    color: #333945;
+    text-align: center;
+    position: relative;
+    margin-left: 25%;
+  }
+
+  .cLight {
+    font-family: "CrayondLight";
+  }
+
+  .cReg {
+    font-family: "CrayondReg";
+  }
+
+  .cBold {
+    font-family: "CrayondBold";
+  }
+
+  .lopend{
+    font-size: 18px;
+    font-family: CrayondBold;
+    color: #333945;
+    position: relative;
+    text-align: center;
+    max-width: 250px;
+    left: 35%;
+    margin-bottom: 50px;
+  }
+
+  .card-container {
+    display: none;
+  }
+
+  .top3titel {
+    font-size: 26px;
+    font-family: CrayondReg;
+    color: #333945;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    margin-left: 25%;
+  }
+
+  .top3list {
+    font-size: 16px;
+    font-family: "Work Sans";
+    color: #333945;
+    position: relative;
+    text-align: center;
+    max-width: 600px;
+    margin-left: 330px;
+    top: 10px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+  }
+
+  .crayondList {
+    font-family: CrayondReg;
+    font-weight: bold;
+    font-size: 130%;
+  }
+
+  .credits {
+    margin-top: 300px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Work Sans";
+    color: #333945;
+    text-align: center;
+    position: relative;
+    margin-left: 30%;
+  }
+}
+
+/* Keyframes voor de fade-in animatie */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    /* Begint met onzichtbaarheid */
+    top: 40px;
+    /* Begint met een positie verschoven naar boven */
+  }
+
+  100% {
+    opacity: 1;
+    /* Eindigt volledig zichtbaar */
+    top: 0;
+    /* Eindigt op de standaardpositie */
+  }
+}
